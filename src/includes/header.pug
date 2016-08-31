@@ -1,0 +1,19 @@
+header#header
+    .container.clearfix
+        nav.main-menu
+            a(href="#").main-menu__item Лента
+            a(href="#").main-menu__item Авторы
+            a(href="#").main-menu__item Магазин
+            a(href="#").main-menu__item Форум
+            a(href="#").main-menu__item FAQ
+            a(href="#").main-menu__item Партнерская программа
+        a(href="#").main-menu__item.main-menu__item-w-icon.l-right
+            <i class="material-icons main-menu__icon">vpn_key</i> Регистрация
+        .login
+            .input
+                i.material-icons.input__icon person
+                input.login-input.input__w-icon(type="text" placeholder="Логин")
+            .input
+                i.material-icons.input__icon lock
+                input.login-input.input__w-icon(type="password" placeholder="Пароль")
+            button.button.button_green(type="submit") Вход
