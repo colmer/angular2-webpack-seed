@@ -1,38 +1,37 @@
+$border-radius: 5px
 .button
 	position: relative
 	top: -1px
-	display: inline-block
+	display: inline-flex
+	align-items: center
+	height: 33px
 	text-decoration: none
-	font-weight: bold
-	border-radius: 5px
-	background-color: $corp-grey
-	padding: 9px 20px
+	border-radius: $border-radius
+	background-color: $icon-grey
+	padding: 0 20px
 	color: $corp-white
+	@include button-light-ineract($icon-grey)
 	&:hover
 		cursor: pointer
-	&:active
-		top: 0px
-		box-shadow: 0
-
-.button_w-icon
-	border-left: 36px solid rgba(0, 0, 0, 0.1)
-
+.button_bold
+	font-weight: bold
+.button_right-straight
+	border-radius: $border-radius 0 0 $border-radius
+.button_left-straight
+	border-radius: 0 $border-radius $border-radius 0
 .button_green
 	background-color: $corp-green
-
-	@include button-shadow($corp-green)
+	@include button-interact($corp-green)
 
 .button_yellow
 	background-color: $corp-yellow
-	@include button-shadow($corp-yellow)
+	@include button-interact($corp-yellow)
 
 .button_blue
 	background-color: $corp-elem-blue
-	@include button-shadow($corp-elem-blue)
+	@include button-interact($corp-elem-blue)
 
 .button__icon
-	position: absolute
-	font-size: 1.8rem
-	left: -26px
-	top: 50%
-	transform: translateY(-50%)
+	font-size: 1.5rem
+	margin-left: 5px
+.button__text

@@ -1,9 +1,15 @@
 /* Make box-shadow  width color */
-@mixin button-shadow($color)
+@mixin button-interact($color)
 	box-shadow: 0 3px 0 0 darken($color, 20%)
 	&:hover
 		background-color: lighten($color, 5%)
 	&:active
 		background-color: darken($color, 5%)
 		box-shadow: 0 1px 0 0 darken($color, 15%)
+		top: 0px
 
+@mixin button-light-ineract($color)
+	&:hover
+		background-color: darken($color, 5%)
+	&:active
+		box-shadow: inset 0 3px 5px 0 darken($color, 15%)

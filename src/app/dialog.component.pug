@@ -1,2 +1,69 @@
 .dialog
-    .dialog__menu Диалог
+    .dialog__header
+        .dialog__header-item
+            .button.button_bold 
+                span.button__text Диалоги
+                i.material-icons.button__icon expand_more
+            span.dialog__counter 2
+            span диалога
+        .dialog__header-item
+            span.dialog__label-text Сообщения:
+            a.button.button_right-straight.dialog__button_active Все
+            a.button.button_left-straight(routerLink="/new") Непрочитанные
+
+        .button.button_bold Перейти к SMS
+    .dialog__list
+        .dialog__item.clearfix
+            img.dialog__avatar.l-avatar-med(src="/dist/4.svg")
+            .dialog__info
+                a(href='') new user
+                .dialog__activity
+                    span.dialog__active-item 
+                        i.material-icons.dialog__status-icon mail
+                        | Не прочитано
+                    span.dialog__active-item Последнее сообщение:
+                    span.dialog__active-item 2 сен 2016 в 18:10
+                    span.dialog__active-item Сообщений:
+                    span.dialog__active-item 9
+            img.dialog__avatar.l-avatar-sm(src="/dist/4.svg")
+            .dialog__message asdasdasdasdasd
+        .dialog__item.clearfix
+            img.dialog__avatar.l-avatar-med(src="/dist/4.svg")
+            .dialog__info
+                a(href='') new user
+                .dialog__activity
+                    span.dialog__active-item 
+                        i.material-icons.dialog__status-icon mail
+                        | Не прочитано
+                    span.dialog__active-item Последнее сообщение:
+                    span.dialog__active-item 1 сен 2016 в 18:10
+                    span.dialog__active-item Сообщений:
+                    span.dialog__active-item 20
+            .dialog__message Hello word!
+        .dialog__item.clearfix
+            img.dialog__avatar.l-avatar-med(src="/dist/4.svg")
+            .dialog__info
+                a(href='') new user
+                .dialog__activity
+                    span.dialog__active-item 
+                        i.material-icons.dialog__status-icon mail
+                        | Не прочитано
+                    span.dialog__active-item Последнее сообщение:
+                    span.dialog__active-item 2 сен 2016 в 18:10
+                    span.dialog__active-item Сообщений:
+                    span.dialog__active-item 9
+            img.dialog__avatar.l-avatar-sm(src="/dist/4.svg")
+            .dialog__message asdasdasdasdasd
+        .dialog__item.clearfix
+            img.dialog__avatar.l-avatar-med(src="/dist/4.svg")
+            .dialog__info
+                a(href='') new user
+                .dialog__activity
+                    span.dialog__active-item 
+                        i.material-icons.dialog__status-icon mail
+                        | Не прочитано
+                    span.dialog__active-item Последнее сообщение:
+                    span.dialog__active-item 1 сен 2016 в 18:10
+                    span.dialog__active-item Сообщений:
+                    span.dialog__active-item 20
+            .dialog__message Hello word!

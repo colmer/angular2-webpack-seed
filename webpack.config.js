@@ -27,6 +27,4 @@ module.exports = {
             template: './src/index.pug'
         })
     ])
-
-
 };

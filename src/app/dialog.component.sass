@@ -1,2 +1,57 @@
-*
-    color: red
+@import "../sass/utilities/index"
+
+.dialog
+    width: 900px
+    background-color: #fff;
+    margin: 30px auto
+    border-radius: 10px
+    color: $corp-grey
+    overflow: hidden
+
+.dialog__header
+    background-color: $corp-light-grey
+    display: flex
+    align-items: center
+    justify-content:  space-between
+    padding: 20px
+
+.dialog__button_active
+    background-color: $corp-elem-blue
+    @include button-light-ineract($corp-elem-blue)
+
+.dialog__header-item
+    display: flex
+    align-items: center
+
+.dialog__counter
+    color: $link-color
+    margin-right: 5px
+    margin-left: 20px
+    font-weight: bold
+
+.dialog__label-text
+    margin-right: 20px
+
+.dialog__item
+    padding: 20px
+    border-bottom: 1px solid $corp-light-grey
+
+.dialog__info
+    display: flex
+    margin-bottom: 10px
+
+.dialog__item:last-child
+    border-bottom: 0
+.dialog__avatar
+    float: left
+    margin-right: 20px
+.dialog__activity
+    margin-left: auto
+.dialog__active-item
+    margin-right: 10px
+.dialog__active-item:nth-child(2n-1)
+    color: $corp-elem-blue
+.dialog__status-icon
+    vertical-align: top
+    margin-top: -5px
+    margin-right: 5px

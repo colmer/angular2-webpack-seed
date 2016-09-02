@@ -3,10 +3,12 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import { DialogComponent } from './dialog.component';
 
+import { routing } from './app.routing';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   declarations: [
     DialogComponent
