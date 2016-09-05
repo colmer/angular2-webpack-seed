@@ -1,5 +1,7 @@
-var webpack = require('webpack');
+var WebpackDevServer = require("webpack-dev-server");
 var HtmlWebpackPlagin = require('html-webpack-plugin');
+
+var webpack = require('webpack');
 
 module.exports = {
 
@@ -26,5 +28,8 @@ module.exports = {
         new HtmlWebpackPlagin({
             template: './src/index.pug'
         })
-    ])
+    ]),
+    devServer: {
+        historyApiFallback: true,
+    }
 };

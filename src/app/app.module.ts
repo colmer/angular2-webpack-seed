@@ -1,19 +1,22 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
-import { DialogComponent } from './dialog.component';
+import { AppComponent }   from './app.component';
 
 import { routing } from './app.routing';
+
+import { DialogModule }  from './dialog/dialog.module';
 
 @NgModule({
   imports: [
     BrowserModule,
+    DialogModule,
     routing
   ],
   declarations: [
-    DialogComponent
+    AppComponent
   ],
-  bootstrap: [ DialogComponent ]
+  bootstrap: [ AppComponent ]
 })
-export class AppModule {
-}
+
+export class AppModule { }

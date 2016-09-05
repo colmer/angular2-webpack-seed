@@ -1,0 +1,28 @@
+.dialog
+    .dialog__header
+        .dialog__header-item
+            .button.button_bold 
+                span.button__text Диалоги
+                i.material-icons.button__icon expand_more
+            span.dialog__counter {{dialogs.length}}
+            span диалога
+        .dialog__header-item
+            span.dialog__label-text Сообщения:
+            a.button.button_right-straight(routerLink="/dialog/all" routerLinkActive="dialog__button_active") Все
+            a.button.button_left-straight(routerLink="/dialog/new" routerLinkActive="dialog__button_active") Непрочитанные
+        a.button.button_bold(routerLink="/dialog/sms") Перейти к SMS
+    .dialog__list
+        .dialog__item.clearfix(*ngFor="let dialog of dialogs")
+            img.dialog__avatar.l-avatar-med(src="/dist/4.svg")
+            .dialog__info
+                a(href='') {{dialog.login}}
+                .dialog__activity
+                    span.dialog__active-item 
+                        i.material-icons.dialog__status-icon mail
+                        | Не прочитано
+                    span.dialog__active-item Последнее сообщение:
+                    span.dialog__active-item 2 сен 2016 в 18:10
+                    span.dialog__active-item Сообщений:
+                    span.dialog__active-item 9
+            img.dialog__avatar.l-avatar-sm(src="/dist/4.svg")
+            .dialog__message {{dialog.text}}

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My App</h1><router-outlet></router-outlet>'
+    template: require('./app.component.pug')
 })
 
 export class AppComponent { }
